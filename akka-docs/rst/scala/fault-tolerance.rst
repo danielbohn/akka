@@ -72,6 +72,12 @@ exceptions are handled by default:
 If the exception escalate all the way up to the root guardian it will handle it
 in the same way as the default strategy defined above.
 
+You can combine your own strategy with the default strategy by using `orElse`
+of the partial functions:
+
+.. includecode:: code/docs/actor/FaultHandlingDocSpec.scala
+   :include: default-strategy-fallback
+
 Stopping Supervisor Strategy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
